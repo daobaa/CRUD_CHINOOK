@@ -8,7 +8,7 @@ public class Menu{
         Scanner sc = new Scanner(System.in);
         Boolean keepGoing = true;
         while(keepGoing){
-            System.out.println("Menu Principal");
+            System.out.println("\nMenu Principal");
             System.out.println("1 - Consultar todos los artistas");
             System.out.println("2 - Consultar artistas por su nombre");
             System.out.println("3 - Consultar los 5 primeros albumes por el nombre del artista");
@@ -23,21 +23,29 @@ public class Menu{
             switch(chosenOption){
                 case 1:
                     Artists.ReadArtists();
+                    break;
                 case 2:
                     //QueryByName()
+                    break;
                 case 3:
                     //AlbumsByName()
+                    break;
                 case 4:
                     //AddArtist()
+                    break;
                 case 5:
                     //ModifyName()
+                    break;
                 case 6:
                     //DelArtist()
+                    break;
                 case 7:
                     System.out.println("Saliendo del programa.");
+                    keepGoing = false;
                     break;
                 default:
-                    System.out.println("Input no valido");
+                    System.out.println("Input no valido\n");
+                    break;
             }
         }
         sc.close();
