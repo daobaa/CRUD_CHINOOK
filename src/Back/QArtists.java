@@ -22,18 +22,18 @@ public class QArtists {
             String input = sc.nextLine();
             if(input.length() < 2){
                 System.out.println("Has d'introduir almenys 2 caràcters");
-            } else{
-                String sql = "SELECT * FROM artist WHERE name LIKE ?";
+                return;
+            }
+            String sql = "SELECT * FROM artist WHERE name LIKE ?";
 
-                try(PreparedStatement statement = connection.prepareStatement(sql)){
-                    statement.setString(1, "%" + input + "%");
-                    ResultSet resultSet = statement.executeQuery();
+            try(PreparedStatement statement = connection.prepareStatement(sql)){
+                statement.setString(1, "%" + input + "%");
+                ResultSet resultSet = statement.executeQuery();
 
-                    while(resultSet.next()){
-                        int id = resultSet.getInt("artist_id");
-                        String nom = resultSet.getString("name");
-                        System.out.println("ID: " + id + ", Nom: " + nom);
-                    }
+                while(resultSet.next()){
+                    int id = resultSet.getInt("artist_id");
+                    String nom = resultSet.getString("name");
+                    System.out.println("ID: " + id + ", Nom: " + nom);
                 }
             }
         } catch(SQLException e){
