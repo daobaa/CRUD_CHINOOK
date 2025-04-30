@@ -3,6 +3,7 @@ package Front;
 import java.util.Scanner;
 import Back.RArtists;
 import Back.QArtists;
+import Back.AArtists;
 
 public class Menu{
     public void mainMenu(){
@@ -30,7 +31,7 @@ public class Menu{
                         QArtists.QueryByName();
                         break;
                     case 3:
-                        //AlbumsByName()
+                        AArtists.AlbumsByName();
                         break;
                     case 4:
                         //AddArtist()
