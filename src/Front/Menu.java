@@ -19,6 +19,7 @@ public class Menu{
 
             System.out.println("\nSelecciona una opción: ");
             int chosenOption = sc.nextInt();
+            System.out.println("");
             switch(chosenOption){
                 case 1:
                     Artists.ReadArtists();
