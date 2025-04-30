@@ -1,6 +1,8 @@
+package Front;
 import java.util.Scanner;
 
-public class Menu extends Artists{
+
+public class Menu{
     public void mainMenu(){
         Scanner sc = new Scanner(System.in);
         Boolean keepGoing = true;
