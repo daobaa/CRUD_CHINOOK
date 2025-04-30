@@ -7,6 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+@SuppressWarnings("resource")
 public class QArtists {
     public static void QueryByName(){
         // Detalles de conexión
@@ -15,10 +16,10 @@ public class QArtists {
         String password = "postgres";
         // Conexión y consulta
         try(Connection connection = DriverManager.getConnection(url, usuari, password)){
-            Scanner sc2 = new Scanner(System.in);
+            Scanner sc = new Scanner(System.in);
 
             System.out.println("Introduce el nombre de un artista:");
-            String input = sc2.nextLine();
+            String input = sc.nextLine();
             if(input.length() < 2){
                 System.out.println("Has d'introduir almenys 2 caràcters");
             } else{
@@ -35,9 +36,9 @@ public class QArtists {
                     }
                 }
             }
-            sc2.close();
         } catch(SQLException e){
-            System.out.println("Error en la connexió o la consulta: " + e.getMessage());
+            System.out.println("Error en la connexió o la consulta:");
+            e.printStackTrace();
         }
     }
 }
