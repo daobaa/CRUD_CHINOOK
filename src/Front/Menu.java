@@ -1,7 +1,8 @@
 package Front;
 
 import java.util.Scanner;
-import Back.Artists;
+import Back.RArtists;
+import Back.QArtists;
 
 public class Menu{
     public void mainMenu(){
@@ -22,10 +23,10 @@ public class Menu{
             System.out.println("");
             switch(chosenOption){
                 case 1:
-                    Artists.ReadArtists();
+                    RArtists.ReadArtists();
                     break;
                 case 2:
-                    //QueryByName()
+                    QArtists.QueryByName()
                     break;
                 case 3:
                     //AlbumsByName()

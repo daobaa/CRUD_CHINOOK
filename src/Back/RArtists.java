@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.sql.SQLException;
 
-public class Artists {
+public class RArtists {
     public static void ReadArtists() {
         // Detalles de conexión
         String url="jdbc:postgresql://localhost:5432/chinook_v2";
