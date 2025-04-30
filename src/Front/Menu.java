@@ -26,7 +26,7 @@ public class Menu{
                     RArtists.ReadArtists();
                     break;
                 case 2:
-                    QArtists.QueryByName()
+                    QArtists.QueryByName();
                     break;
                 case 3:
                     //AlbumsByName()
