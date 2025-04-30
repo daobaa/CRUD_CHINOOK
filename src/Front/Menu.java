@@ -1,6 +1,7 @@
 package Front;
-import java.util.Scanner;
 
+import java.util.Scanner;
+import Back.Artists;
 
 public class Menu{
     public void mainMenu(){
@@ -20,7 +21,7 @@ public class Menu{
             int chosenOption = sc.nextInt();
             switch(chosenOption){
                 case 1:
-                    //ReadArtists()
+                    Artists.ReadArtists();
                 case 2:
                     //QueryByName()
                 case 3:
