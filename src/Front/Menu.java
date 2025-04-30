@@ -4,6 +4,7 @@ import java.util.Scanner;
 import Back.RArtists;
 import Back.QArtists;
 import Back.AArtists;
+import Back.CArtists;
 
 public class Menu{
     public void mainMenu(){
@@ -34,7 +35,7 @@ public class Menu{
                         AArtists.AlbumsByName();
                         break;
                     case 4:
-                        //AddArtist()
+                        CArtists.AddArtist();
                         break;
                     case 5:
                         //ModifyName()
