@@ -23,7 +23,7 @@ public class Artists {
             while(resultSet.next()){
                 int id = resultSet.getInt("artist_id");
                 String nom = resultSet.getString("name");
-                System.out.println("ID:" + id + ", Nom:" + nom);
+                System.out.println("ID: " + id + ", Nom: " + nom);
             }
         } catch(SQLException e){
             System.out.println("Error en la connexió o la consulta: " + e.getMessage());
