@@ -31,7 +31,7 @@ public class MName {
                 statement.setString(1, inputNou);
                 statement.setInt(2, input);
                 statement.executeUpdate();
-                System.out.println("\nNombre del artista modificado correctamente.");
+                System.out.println("\nL'artista s'ha modificat correctament.");
             }
         } catch(SQLException e){
             System.out.println("Error en la connexió o la consulta:");
