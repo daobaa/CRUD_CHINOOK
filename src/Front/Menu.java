@@ -6,6 +6,7 @@ import Back.QArtists;
 import Back.AArtists;
 import Back.CArtists;
 import Back.MName;
+import Back.DArtists;
 
 public class Menu{
     public void mainMenu(){
@@ -42,7 +43,7 @@ public class Menu{
                         MName.ModifyName();
                         break;
                     case 6:
-                        //DelArtist()
+                        DArtists.DelArtist();
                         break;
                     case 7:
                         System.out.println("Saliendo del programa.");
