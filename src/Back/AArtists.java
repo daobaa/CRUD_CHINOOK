@@ -8,8 +8,31 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 @SuppressWarnings("resource")
+/**
+ * Clase {@code AArtists}.
+ * 
+ * Esta clase proporciona un metodo para buscar un artista por nombre y 
+ * mostrar sus cinco primeros albumes registrados en la base de datos.
+ * <p>
+ * El metodo {@link #AlbumsByName()} solicita al usuario el nombre (o parte del nombre)
+ * del artista, obtiene su ID, y luego lista hasta cinco albumes asociados,
+ * mostrando su ID y titulo.
+ * </p>
+ * 
+ * @author Diego Andres Olivera Abarca
+ * @version 1.0
+ * @since 2025-05-07
+ */
 public class AArtists {
-    // Detalles de conexión
+    /**
+     * Solicita al usuario el nombre de un artista y, si existe,
+     * muestra los primeros cinco albumes de dicho artista.
+     * <p>
+     * - Si el nombre introducido tiene menos de dos caracteres, el metodo termina sin hacer consulta.
+     * - Si no se encuentra ningun artista con ese patrón, informa al usuario.
+     * - Si lo encuentra, recupera hasta cinco albumes ordenados por su ID.
+     * </p>
+     */
     public static void AlbumsByName(){
         String url="jdbc:postgresql://localhost:5432/chinook_v2";
         String usuari = "postgres";
