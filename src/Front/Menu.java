@@ -5,6 +5,7 @@ import Back.RArtists;
 import Back.QArtists;
 import Back.AArtists;
 import Back.CArtists;
+import Back.MName;
 
 public class Menu{
     public void mainMenu(){
@@ -38,7 +39,7 @@ public class Menu{
                         CArtists.AddArtist();
                         break;
                     case 5:
-                        //ModifyName()
+                        MName.ModifyName();
                         break;
                     case 6:
                         //DelArtist()
