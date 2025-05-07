@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"Back","l":"AArtists"},{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"Back","l":"CArtists"},{"p":"Back","l":"DArtists"},{"p":"Front","l":"Main"},{"p":"Front","l":"Menu"},{"p":"Back","l":"MName"},{"p":"Back","l":"QArtists"},{"p":"Back","l":"RArtists"}];updateSearchResults();
